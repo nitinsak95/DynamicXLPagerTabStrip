@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A81B9B107281152700F6C50 /* Pods_DynamicXLPager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 101CD4BEA2D6FED0BC5EBC82 /* Pods_DynamicXLPager.framework */; };
 		A436EEE8215F42A400333501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436EEE7215F42A400333501 /* AppDelegate.swift */; };
 		A436EEEA215F42A400333501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A436EEE9215F42A400333501 /* ViewController.swift */; };
 		A436EEED215F42A400333501 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A436EEEB215F42A400333501 /* Main.storyboard */; };
 		A436EEEF215F42A400333501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A436EEEE215F42A400333501 /* Assets.xcassets */; };
 		A436EEF2215F42A400333501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A436EEF0215F42A400333501 /* LaunchScreen.storyboard */; };
+		A48FF3F5215F472100D0FBE4 /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48FF3F4215F472100D0FBE4 /* VC1.swift */; };
+		A48FF3F7215F473100D0FBE4 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48FF3F6215F473100D0FBE4 /* VC2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		101CD4BEA2D6FED0BC5EBC82 /* Pods_DynamicXLPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DynamicXLPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A436EEE4215F42A300333501 /* DynamicXLPager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicXLPager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A436EEE7215F42A400333501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A436EEE9215F42A400333501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		A436EEEE215F42A400333501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A436EEF1215F42A400333501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A436EEF3215F42A400333501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A48FF3F4215F472100D0FBE4 /* VC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
+		A48FF3F6215F473100D0FBE4 /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
+		DEF77E24DBDBB7ED5226F52B /* Pods-DynamicXLPager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicXLPager.release.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicXLPager/Pods-DynamicXLPager.release.xcconfig"; sourceTree = "<group>"; };
+		EA20D7308462DA1937A33509 /* Pods-DynamicXLPager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DynamicXLPager.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DynamicXLPager/Pods-DynamicXLPager.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A81B9B107281152700F6C50 /* Pods_DynamicXLPager.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F47C54D7041CC674EA9CD28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				101CD4BEA2D6FED0BC5EBC82 /* Pods_DynamicXLPager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8501E8EFFF4AAFB6D47D741E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA20D7308462DA1937A33509 /* Pods-DynamicXLPager.debug.xcconfig */,
+				DEF77E24DBDBB7ED5226F52B /* Pods-DynamicXLPager.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A436EEDB215F42A300333501 = {
 			isa = PBXGroup;
 			children = (
 				A436EEE6215F42A300333501 /* DynamicXLPager */,
 				A436EEE5215F42A300333501 /* Products */,
+				8501E8EFFF4AAFB6D47D741E /* Pods */,
+				5F47C54D7041CC674EA9CD28 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +88,8 @@
 				A436EEEE215F42A400333501 /* Assets.xcassets */,
 				A436EEF0215F42A400333501 /* LaunchScreen.storyboard */,
 				A436EEF3215F42A400333501 /* Info.plist */,
+				A48FF3F4215F472100D0FBE4 /* VC1.swift */,
+				A48FF3F6215F473100D0FBE4 /* VC2.swift */,
 			);
 			path = DynamicXLPager;
 			sourceTree = "<group>";
@@ -71,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A436EEF6215F42A400333501 /* Build configuration list for PBXNativeTarget "DynamicXLPager" */;
 			buildPhases = (
+				AA1BF244BD70FDF98E7917F2 /* [CP] Check Pods Manifest.lock */,
 				A436EEE0215F42A300333501 /* Sources */,
 				A436EEE1215F42A300333501 /* Frameworks */,
 				A436EEE2215F42A300333501 /* Resources */,
+				1AF0DAF0F35FB1E99DE639E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,13 +163,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1AF0DAF0F35FB1E99DE639E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-DynamicXLPager/Pods-DynamicXLPager-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DynamicXLPager/Pods-DynamicXLPager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA1BF244BD70FDF98E7917F2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DynamicXLPager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A436EEE0215F42A300333501 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48FF3F5215F472100D0FBE4 /* VC1.swift in Sources */,
 				A436EEEA215F42A400333501 /* ViewController.swift in Sources */,
 				A436EEE8215F42A400333501 /* AppDelegate.swift in Sources */,
+				A48FF3F7215F473100D0FBE4 /* VC2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +345,7 @@
 		};
 		A436EEF7215F42A400333501 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA20D7308462DA1937A33509 /* Pods-DynamicXLPager.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +361,7 @@
 		};
 		A436EEF8215F42A400333501 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF77E24DBDBB7ED5226F52B /* Pods-DynamicXLPager.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
